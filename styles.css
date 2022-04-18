@@ -53,6 +53,7 @@ section{
 .btn:hover{
 
     color: var(--blue);
+    
 }
 
     /* navigation bars */
@@ -95,7 +96,7 @@ section{
 
 .header .navbar a:hover{
 
-    color: var(--blue);
+    border-bottom: 0.5rem solid var(--blue);
     
 }
 
