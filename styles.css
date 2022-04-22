@@ -36,6 +36,34 @@ section{
     padding: 2rem 9%;
 }
 
+section:nth-child(even){
+
+    background-color: #f5f5f5;
+
+    /* background: url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat; */
+}
+
+.heading{
+
+    text-align: center;
+    padding-bottom: 2rem;
+    text-shadow: var(--text-shadow);
+    text-transform: uppercase;
+    color: var(--black);
+    font-size: 5rem;
+    letter-spacing: .4rem;
+}
+
+.heading span{
+
+    text-transform: uppercase;
+    color: var(--blue);
+}
+
 .btn{
 
     display: inline-block;
@@ -97,6 +125,7 @@ section{
 .header .navbar a:hover{
 
     border-bottom: 0.5rem solid var(--blue);
+    color: var(--blue);
     
 }
 
@@ -115,7 +144,7 @@ section{
 
     font-size: 2.5rem;
     border-radius: .5rem;
-    background: #f1e9e4;
+    background: var(--blue);
     color: var(--black);
     padding: 1rem 1.5rem;
     cursor: pointer;
@@ -166,11 +195,289 @@ section{
 }
 
 
+/* statistics css ends */
+
+.icons-container{
+
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    padding: 5rem;
+    padding-bottom: 5rem;
+
+}
+
+.icons-container .icons{
+
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    text-align: center;
+    padding: 2.5rem;
+}
+
+.icons-container .icons i{
+
+    font-size: 4.5rem;
+    color: var(--blue);
+    padding: .7rem;
+}
+
+.icons-container .icons h3{
+
+    font-size: 4.5rem;
+    color: var(--black);
+    padding: .5rem 0;
+    text-shadow: var(--text-shadow);
+}
+
+.icons-container .icons p{
+
+    font-size: 1.7rem;
+    color: var(--light-color);
+}
+
+/* statistics css ends */
+
+
+/* services css starts */
+
+
+.services .box-container{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+
+.services .box-container .box{
+
+    background: #fff;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    padding: 2.5rem;
+}
+
+.services .box-container .box i{
+
+    color: var(--blue);
+    font-size: 5rem;
+    padding-bottom: .5rem;
+}
+
+.services .box-container .box h3{
+
+    color: var(--black);
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+
+.services .box-container .box p{
+
+    color: var(--light-color);
+    font-size: 1.4rem;
+    line-height: 2;
+}
+
+/* services css ends */
 
 
 
+/* about us css starts */
+
+.about .row{
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+      
+}
+
+.about .row .image{
+
+    flex:1 1 45rem;
+}
+
+.about .row .image img{
+
+    width: 100%;
+}
+
+.about .row .content{
+
+    flex: 1 1 45rem;
+}
+
+.about .row .content h3{
+    
+    color: var(--black);
+    text-shadow: var(--text-shadow);
+    font-size: 4rem;
+    line-height: 1.8;
+}
+
+.about .row .content p{
+    
+    color: var(--light-color);
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    line-height: 1.8;
+}
+
+/* about us css ends */
+
+/* blogs css starts */
+
+.blogs .box-container{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+
+.blogs .box-container .box{
+
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    padding: 2rem;
+
+}
+
+.blogs .box-container .box .image{
+    
+    height: 20rem;
+    overflow: hidden;
+    border-radius: .5rem;
+}
+
+.blogs .box-container .box .image img{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blogs .box-container .box:hover .image img{
+
+    transform: scale(1.2);
+}
+
+.blogs .box-container .box .content{
+
+    padding: 1rem;
+}
+
+.blogs .box-container .box .content .icon{
+
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blogs .box-container .box .content .icon a{
+
+    font-size: 1.4rem;
+    color: var(--light-color);
+}
+
+.blogs .box-container .box .content .icon a:hover{
+
+    color: var(--blue);
+}
+
+.blogs .box-container .box .content .icon a i{
+
+    padding: .5rem;
+    color: var(--blue);
+}
+
+.blogs .box-container .box .content h3{
+
+    color: var(--black);
+    font-size: 3rem;
+
+}
+
+.blogs .box-container .box .content p{
+
+    color: var(--light-color);
+    font-size: 1.5rem;
+    line-height: 1.8;
+    padding: 1rem 0;
+    
+}
+
+/* blogs css ends */
+
+/* footer css starts*/
+
+.footer{
+
+    background: rgb(77, 74, 74);
+
+}
+
+.footer .box-container{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    gap: 2rem;
+}
+
+.footer .box-container .box h3{
+
+    font-size: 3rem;
+    color: white;
+    padding: 1rem 0;
+    
+}
+
+.footer .box-container .box a{
+
+    display: block;
+    font-size: 1.5rem;
+    color: white;
+    padding: 1rem 0;
+    
+}
+
+.footer .box-container .box a i{
+
+    padding-right: .5rem;
+    color: var(--blue);
+
+}
+
+.footer .box-container .box a:hover i{
+
+    padding-right: 2rem;
+}
+
+.footer .credit{
+
+    padding: 1rem;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+
+}
+
+.footer .credit span{
+
+    color: var(--blue);
+}
+
+/* footer css ends*/
 
 /* media queries */
+
 @media (max-width:991px){
     html{
         font-size: 55%;
@@ -178,6 +485,12 @@ section{
 
     .header{
         padding: 2rem;
+    }
+
+    section{
+
+        padding: 2rem;
+
     }
 }
 
@@ -215,6 +528,14 @@ section{
         font-size: 2rem;
         display: block;
         margin: 2.5rem;
+        width: 11.5rem;
+
+    }
+
+    .header .navbar a:hover{
+
+        color: var(--blue);
+        border-bottom: none;
         
     }
 }
