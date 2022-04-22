@@ -413,6 +413,7 @@ section:nth-child(even){
 
 /* blogs css ends */
 
+
 /* footer css starts*/
 
 .footer{
@@ -495,6 +496,7 @@ section:nth-child(even){
 }
 
 @media (max-width:768px){
+    
     #menu-btn{
         display: initial;
     }
