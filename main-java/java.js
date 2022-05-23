@@ -41,5 +41,44 @@ num.forEach(item => {
     animate();
 })
 
+
+const count = document.getElementById("visits");
+
+incrementVisitsCount();
+
+function incrementVisitsCount() {
+    
+    let visits;
+
+    if (!localStorage.getItem("visits")) localStorage.setItem("visits", 1);
+
+
+    else {
+        visits = +localStorage.getItem("visits");
+        const incrementedCount = visits + 1;
+
+        localStorage.setItem("visits", incrementedCount);
+
+    }
+    
+
+    count.textContent = localStorage.getItem("visits");
+    
+}
+
+
+// function websiteVisits(reponse) {
+//     document.querySelector("#visits").textContent = reponse.value;
+// }
+
+
 // statistics section ends
+
+
+// slider section starts
+
+
+
+
+
 

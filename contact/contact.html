@@ -7,26 +7,43 @@
      <!-- font awesome cdn link -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="../main-style/styles.css">
+    <link rel="stylesheet" href="contact.css">
 
-    <title>services</title>
+    <title>contact</title>
 </head>
 <body>
 
      <!-- header section ends -->
 
-     <header class="header">
+    <header class="header">
 
-        <a href="#" class="logo"> <img src="../images/Logo1 (2).png" height="80px" alt=""></a>
+        <a href="#" class="logo"> <img src="../../../Mente/DSW_PROJECT-1/images/Logo1 (2).png" height="80px" alt=""></a>
 
         <nav class="navbar">
 
             <ul>
-                <li><a href="../index.html">home</a></li>
-                <li><a href="services.html">services</a></li>
+                <li><a href="../../../Mente/DSW_PROJECT-1/index.html">home</a></li>
+                <li><a href="../../../Mente/DSW_PROJECT-1/services/services.html">services <span id="service"></span></a>
+
+                    <div class="sub-menu">
+                        <ul>
+
+                            <li><a href="../DSW_PROJECT-1/services/services.html">psychotherapy</a></li>
+                            <li><a href="../DSW_PROJECT-1/services/services.html">Yemen therapy</a></li>
+                            <li><a href="../DSW_PROJECT-1/services/services.html">Support groups</a></li>
+                            <li><a href="../DSW_PROJECT-1/services/services.html">Dual diagnosis</a></li>
+                            <li><a href="../DSW_PROJECT-1/services/services.html">immediate  referrals</a></li>
+                            <li><a href="../DSW_PROJECT-1/services/services.html">mental illness</a></li>
+
+                        </ul>
+                    </div>
+
+                </li>
                 <li><a href="#about">about us</a></li>
                 <li><a href="#book">blogs</a></li>
-                <li><a href="#blogs" id="contact"> <span>contact us</span> </a></li>
+                <li><a href="../DSW_PROJECT-1/contact/contact.html" id="contact"> <span>contact us</span> </a></li>
             </ul>
                 
         </nav>
@@ -37,61 +54,58 @@
 
     <!-- header section ends -->
 
-    <!-- services section starts -->
+    <!-- form section starts -->
 
-    <section class="services" id="services">
+    <section>
 
-        <h1 class="heading"> our <span>services</span> </h1>
+        <div class="contact">
 
-        <div class="box-container">
-
-            <div class="box">
-                <i class="fas fa-notes-medical"></i>
-                <h3>Psychotherapy</h3>
-                <p>the main body of matter in a manuscript, book, newspaper, etc., as distinguished from notes, appendixes, headings, illustrations, etc.</p>
-                <a href="" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
+            <div class="wrapper">
+                <header>Send us a Message</header>
+                <form action="#">
+                    <div class="dbl-field">
+                        <div class="field">
+                            <input type="text" name="name" placeholder="Enter your name">
+                            <i class='fas fa-user'></i>
+                        </div>
+                        <div class="field">
+                            <input type="text" name="surname" placeholder="Enter your surname">
+                            <i class='fas fa-user'></i>
+                        </div>
+                    </div>
+                    <div class="dbl-field">
+                        <div class="field">
+                            <input type="text" name="phone" placeholder="Enter your phone">
+                            <i class='fas fa-phone-alt'></i>
+                        </div>
+                        <div class="field">
+                            <input type="text" name="email" placeholder="Enter your email">
+                            <i class='fas fa-envelope'></i>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <textarea placeholder="Write your message" name="message"></textarea>
+                        <i class="material-icons">message</i>
+                    </div>
+                    <div class="button-area">
+                        <button type="submit" class="btn">Send Message</button>
+                        <span></span>
+                    </div>
+                </form>
             </div>
 
-            <div class="box">
-                <i class="fas fa-ambulance"></i>
-                <h3>yemen therapy</h3>
-                <p>the main body of matter in a manuscript, book, newspaper, etc., as distinguished from notes, appendixes, headings, illustrations, etc.</p>
-                <a href="" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
-            </div>
 
-            <div class="box">
-                <i class="fas fa-user-md"></i>
-                <h3>support groups</h3>
-                <p>the main body of matter in a manuscript, book, newspaper, etc., as distinguished from notes, appendixes, headings, illustrations, etc.</p>
-                <a href="" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
-            </div>
-
-            <div class="box">
-                <i class="fas fa-pills"></i>
-                <h3>dual diagnosis</h3>
-                <p>the main body of matter in a manuscript, book, newspaper, etc., as distinguished from notes, appendixes, headings, illustrations, etc.</p>
-                <a href="" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
-            </div>
-
-            <div class="box">
-                <i class="fas fa-procedures"></i>
-                <h3>immediate referrals</h3>
-                <p>the main body of matter in a manuscript, book, newspaper, etc., as distinguished from notes, appendixes, headings, illustrations, etc.</p>
-                <a href="" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
-            </div>
-
-            <div class="box">
-                <i class="fas fa-heartbeat"></i>
-                <h3>mental illness</h3>
-                <p>the main body of matter in a manuscript, book, newspaper, etc., as distinguished from notes, appendixes, headings, illustrations, etc.</p>
-                <a href="" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
-            </div>
-
-        </div>
-        
     </section>
 
-    <!-- services section ends -->
+    
+    
+    
+            
+    </div>
+
+   
+
+    <!-- form section ends -->
 
         
     <!-- footter section starts -->
@@ -142,6 +156,7 @@
     <!-- footter section starts -->
 
     <script src="../main-java/java.js"></script>
+    <script src="script.js"></script>
     
 </body>
 </html>
